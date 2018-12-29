@@ -1,5 +1,29 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-   INDEX BODY
+   <h2 class="page-header"> Przydzielone zadania</h2>
+   <table class="table table-striped">
+      <thead>
+      <tr>
+         <th scope="col">#</th>
+         <th scope="col">Zadanie</th>
+         <th scope="col">Data wykonania</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+         <th scope="row">1</th>
+         <td>NAME</td>
+         <td>DATA</td>
+         <td>
+            <a href="/todo/details/1" class="tn btn-success">Szczegóły</a>
+            <a href="/todo/edit/1" class="tn btn-default">Edycja</a>
+            <a href="/todo/details/1" class="tn btn-danger">Usuń</a>
+         </td>
+      </tr>
+
+
+      </tbody>
+   </table>
+
 {% endblock %}
