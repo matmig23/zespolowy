@@ -11,12 +11,37 @@ class TodoController extends Controller
     /**
      * @Route("/todo", name="todo_list")
      */
-    public function indexAction(Request $request)
+    public function listAction(Request $request)
     {
-        die('TODO LIST');
+
         // replace this example code with whatever you need
-        return $this->render('default/index.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
-        ]);
+        return $this->render('todo/index.html.twig');
+    }
+    /**
+     * @Route("/todo/create", name="todo_create")
+     */
+    public function createAction(Request $request)
+    {
+
+        // replace this example code with whatever you need
+        return $this->render('todo/create.html.twig');
+    }
+    /**
+     * @Route("/todo/edit/{id}", name="todo_edit")
+     */
+    public function editAction($id, Request $request)
+    {
+
+        // replace this example code with whatever you need
+        return $this->render('todo/edit.html.twig');
+    }
+    /**
+     * @Route("/todo/details/{id}", name="todo_details")
+     */
+    public function detailsAction($id)
+    {
+
+        // replace this example code with whatever you need
+        return $this->render('todo/details.html.twig');
     }
 }

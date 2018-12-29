@@ -11,7 +11,7 @@ class InventoryController extends Controller
     /**
      * @Route("/inventory", name="inventory_list")
      */
-    public function indexAction(Request $request)
+    public function inventoryAction(Request $request)
     {
         die('INVENTORY LIST');
         // replace this example code with whatever you need

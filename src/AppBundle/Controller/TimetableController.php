@@ -11,7 +11,7 @@ class TimetableController extends Controller
     /**
      * @Route("/timetable", name="timetable")
      */
-    public function indexAction(Request $request)
+    public function timetableAction(Request $request)
     {
         die('CALENDAR');
         // replace this example code with whatever you need

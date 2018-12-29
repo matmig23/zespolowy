@@ -11,7 +11,7 @@ class StatisticsController extends Controller
     /**
      * @Route("/stats", name="statistics")
      */
-    public function indexAction(Request $request)
+    public function statisticsAction(Request $request)
     {
         die('STATISTICS');
         // replace this example code with whatever you need

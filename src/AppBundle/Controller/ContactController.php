@@ -11,7 +11,7 @@ class ContactController extends Controller
     /**
      * @Route("/contact", name="contact_form")
      */
-    public function indexAction(Request $request)
+    public function contactAction(Request $request)
     {
         die('CONTACT FORM');
         // replace this example code with whatever you need
