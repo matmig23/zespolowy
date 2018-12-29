@@ -9,14 +9,12 @@ use Symfony\Component\Routing\Annotation\Route;
 class InventoryController extends Controller
 {
     /**
-     * @Route("/inventory", name="inventory_list")
+     * @Route("/Inventory/index", name="inventory_list")
      */
     public function inventoryAction(Request $request)
     {
-        die('INVENTORY LIST');
+
         // replace this example code with whatever you need
-        return $this->render('default/index.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
-        ]);
+        return $this->render('Inventory/index.html.twig');
     }
 }

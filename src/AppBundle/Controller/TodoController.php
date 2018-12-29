@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class TodoController extends Controller
 {
     /**
-     * @Route("/todo", name="todo_list")
+     * @Route("/todo/index", name="todo_list")
      */
     public function listAction(Request $request)
     {

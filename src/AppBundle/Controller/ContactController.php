@@ -9,14 +9,12 @@ use Symfony\Component\Routing\Annotation\Route;
 class ContactController extends Controller
 {
     /**
-     * @Route("/contact", name="contact_form")
+     * @Route("/Contact/index", name="contact_form")
      */
     public function contactAction(Request $request)
     {
-        die('CONTACT FORM');
+
         // replace this example code with whatever you need
-        return $this->render('default/index.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
-        ]);
+        return $this->render('Contact/index.html.twig');
     }
 }

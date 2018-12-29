@@ -9,14 +9,12 @@ use Symfony\Component\Routing\Annotation\Route;
 class StatisticsController extends Controller
 {
     /**
-     * @Route("/stats", name="statistics")
+     * @Route("/Statistics/index", name="statistics")
      */
     public function statisticsAction(Request $request)
     {
-        die('STATISTICS');
+
         // replace this example code with whatever you need
-        return $this->render('default/index.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
-        ]);
+        return $this->render('Statistics/index.html.twig');
     }
 }
