@@ -19,9 +19,9 @@
          <td>{{ todo.name }}</td>
          <td>{{ todo.dueDate|date('F j, Y, g:i a')}}</td>
          <td>
-            <a href="/todo/details/{{ todo.id }}" class="tn btn-success">Szczegóły</a>
-            <a href="/todo/edit/{{ todo.id }}" class="tn btn-default">Edycja</a>
-            <a href="/todo/details/{{ todo.id }}" class="tn btn-danger">Usuń</a>
+            <a href="/todo/details/{{ todo.id }}" class="tn btn-success">Details</a>
+            <a href="/todo/edit/{{ todo.id }}" class="tn btn-default">Edit</a>
+            <a href="/todo/delete/{{ todo.id }}" class="tn btn-danger">Delete</a>
          </td>
       </tr>
       {%  endfor  %}

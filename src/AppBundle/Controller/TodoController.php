@@ -148,8 +148,8 @@ class TodoController extends Controller
 
     }
     /**
-     * @Route("/todo/details/{id}", name="todo_details")
-     */
+ * @Route("/todo/details/{id}", name="todo_details")
+ */
     public function detailsAction($id)
     {
         $todo = $this->getDoctrine()
@@ -161,5 +161,24 @@ class TodoController extends Controller
         ));
 
         return $this->render('todo/details.html.twig');
+    }
+    /**
+     * @Route("/todo/delete/{id}", name="todo_delete")
+     */
+    public function deleteAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $todo = $em->getRepository('AppBundle:Todo')->find($id);
+
+        $em->remove($todo);
+        $em->flush();
+
+        $this->addFlash(
+            'notice',
+            'Task Removed'
+        );
+
+        return $this->redirectToRoute('todo_list');
+
     }
 }
