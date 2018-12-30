@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3949efc2-04ac-4c38-88ae-582059de31a8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/todo/create.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/todo/create.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/todo/details.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/todo/details.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/todo/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/todo/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/todo/edit.html.twig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/TodoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/TodoController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,17 +17,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/TodoController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="83" column="11" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
+            <state relative-caret-position="321">
+              <caret line="165" lean-forward="true" selection-start-line="165" selection-end-line="165" />
               <folding>
                 <element signature="e#40#85#0#PHP" expanded="true" />
-                <element signature="e#828#844#1#PHP" expanded="true" />
-                <element signature="e#901#923#0#PHP" expanded="true" />
-                <element signature="e#3606#3622#1#PHP" expanded="true" />
-                <element signature="e#3684#3708#0#PHP" expanded="true" />
+                <element signature="e#5758#5779#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,14 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/todo/edit.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="e#12#26#0#Twig" expanded="true" />
-              </folding>
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -59,11 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/todo/create.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="8" />
-              <folding>
-                <element signature="e#12#26#0#Twig" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -71,7 +60,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/todo/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="323">
               <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="52" />
             </state>
           </provider>
@@ -110,10 +99,10 @@
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/Resources/views/todo/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/TodoController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/todo/details.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/todo/create.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/todo/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/TodoController.php" />
       </list>
     </option>
   </component>
@@ -164,10 +153,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="993" />
-    <option name="y" value="32" />
-    <option name="width" value="979" />
-    <option name="height" value="1040" />
+    <option name="x" value="951" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -175,7 +163,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -260,6 +247,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -295,12 +283,15 @@
       <workItem from="1546085352694" duration="127000" />
       <workItem from="1546085490685" duration="17053000" />
       <workItem from="1546109447278" duration="8000" />
-      <workItem from="1546183208479" duration="7842000" />
+      <workItem from="1546183208479" duration="10130000" />
+      <workItem from="1546193611498" duration="280000" />
+      <workItem from="1546193907357" duration="694000" />
+      <workItem from="1546194618022" duration="207000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31602000" />
+    <option name="totallyTimeSpent" value="35071000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -312,10 +303,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="795" y="26" width="783" height="832" extended-state="0" />
+    <frame x="761" y="0" width="782" height="831" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2033195" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23268698" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -328,7 +319,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3295129" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30714285" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30615166" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -488,13 +479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/Inventory/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -509,24 +493,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/TodoController.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="83" column="11" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
-          <folding>
-            <element signature="e#40#85#0#PHP" expanded="true" />
-            <element signature="e#828#844#1#PHP" expanded="true" />
-            <element signature="e#901#923#0#PHP" expanded="true" />
-            <element signature="e#3606#3622#1#PHP" expanded="true" />
-            <element signature="e#3684#3708#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/todo/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="52" />
+        <state relative-caret-position="156">
+          <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -539,20 +509,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/todo/create.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="8" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/todo/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/todo/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/TodoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="165" lean-forward="true" selection-start-line="165" selection-end-line="165" />
           <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
+            <element signature="e#40#85#0#PHP" expanded="true" />
+            <element signature="e#5758#5779#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
