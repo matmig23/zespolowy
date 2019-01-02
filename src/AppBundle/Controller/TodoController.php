@@ -75,7 +75,7 @@ class TodoController extends Controller
                 'Task Added'
             );
 
-            return $this->redirectToRoute('todo_list');
+            return $this->redirectToRoute('todo_create');
 
 
         }

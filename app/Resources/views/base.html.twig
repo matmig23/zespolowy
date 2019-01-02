@@ -38,9 +38,12 @@
             <li class="nav-item">
                 <a class="nav-link" href="/">Strona Główna <span class="sr-only">(current)</span></a>
             </li>
+
+            {% if is_granted('ROLE_ADMIN') %}
             <li class="nav-item">
                 <a class="nav-link" href="/Timetable/index">Kalendarz</a>
             </li>
+            {% endif %}
 
             {% if is_granted('ROLE_ADMIN') %}
             <li class="nav-item">
@@ -51,12 +54,20 @@
             <li class="nav-item">
                 <a class="nav-link" href="/todo/create">Dodaj Zadanie</a>
             </li>
+
+            {% if is_granted('ROLE_ADMIN') %}
             <li class="nav-item">
                 <a class="nav-link" href="/Statistics/index">Statystyki</a>
             </li>
+            {% endif %}
+
+            {% if is_granted('ROLE_ADMIN') %}
             <li class="nav-item">
                 <a class="nav-link" href="/Inventory/index">Inwentaryzacja</a>
             </li>
+            {% endif %}
+
+
             <li class="nav-item">
                 <a class="nav-link" href="/Contact/index">Kontakt</a>
             </li>
