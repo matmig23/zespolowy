@@ -18,7 +18,7 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 class TodoController extends Controller
 {
     /**
-     * @Route("/todo/index", name="todo_list")
+     * @Route("/admin/list", name="admin_list")
      */
     public function listAction(Request $request)
     {
