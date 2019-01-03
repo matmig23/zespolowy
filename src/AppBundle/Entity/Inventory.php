@@ -39,30 +39,107 @@ class Inventory
     /**
      * @var string
      *
-     * @ORM\Column(name="description", type="string", length=255)
+     * @ORM\Column(name="owner", type="string", length=255)
      */
-    private $description;
+    private $owner;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="priority", type="string", length=255)
+     * @ORM\Column(name="description", type="string", length=255)
      */
-    private $priority;
+
+    private $description;
 
     /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="due_date", type="datetime")
+     * @return int
      */
-    private $dueDate;
+    public function getId()
+    {
+        return $this->id;
+    }
 
     /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="create_date", type="datetime")
+     * @param int $id
+     * @return Inventory
      */
-    private $createDate;
+    public function setId($id)
+    {
+        $this->id = $id;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param string $name
+     * @return Inventory
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param string $category
+     * @return Inventory
+     */
+    public function setCategory($category)
+    {
+        $this->category = $category;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOwner()
+    {
+        return $this->owner;
+    }
+
+    /**
+     * @param string $owner
+     * @return Inventory
+     */
+    public function setOwner($owner)
+    {
+        $this->owner = $owner;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $description
+     * @return Inventory
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+        return $this;
+    }
 
 
 }
