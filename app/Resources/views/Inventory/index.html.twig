@@ -1,5 +1,30 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    INDEX INVENTORY BODY
+    <h2 class="page-header">Inventory</h2>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Owner</th>
+        </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <th scope="row">ID</th>
+                <td>NAME</td>
+                <td>OWNER</td>
+                <td>
+                    <a href="/Inventory/{{ path('Inventory_details')}}" class="tn btn-success">Details</a>
+                    <a href="/Inventory/edit/" class="tn btn-default">Edit</a>
+                    <a href="/Inventory/delete/" class="tn btn-danger">Delete</a>
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
 {% endblock %}
