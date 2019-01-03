@@ -18,16 +18,21 @@
     <h1 class="h10 font-weight-normal">Please sign in</h1>
     </body>
 
-    <input type="text" placeholder="Email" class="form-control" id="username" name="_username" value="{{ last_username }}" required="required" autocomplete="username" />
+    <input type="text" placeholder="Email" class="form-control" id="username" name="_username" value="{{ last_username }}" required="required" autocomplete="username" style="margin-bottom: 10px;"/>
 
 
-    <input type="password" placeholder="Password" class="form-control" id="password" name="_password" required="required" autocomplete="current-password" />
+    <input type="password" placeholder="Password" class="form-control" id="password" name="_password" required="required" autocomplete="current-password" style="margin-bottom: 10px;"/>
 
-    <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
-    <label for="remember_me">{{ 'Remamber me'|trans }}</label>
-
-
-    <button class="btn btn-lg btn-warning btn-block" type="submit">Sign in</button>
+    {#<input type="checkbox" id="remember_me" name="_remember_me" value="on" />#}
+    {#<label for="remember_me">{{ 'Remamber me'|trans }}</label>#}
+    <div class="row"></div>
+    <div class="row">
+        <div class="col-md-6">
+            <button class="btn btn-lg btn-warning btn-block" type="submit">Sign in</button>
+        </div>
+        <div class="col-md-6">
+            <button class="btn btn-lg btn-warning btn-block" type="submit"><a href="{{ path('fos_user_registration_register') }} "> Register </a></button>
+        </div>
+    </div>
 </form>
-    <a href="{{ path('fos_user_registration_register') }} "> <button class="btn btn-warning btn-block" type="submit">Register</button> </a>
 
