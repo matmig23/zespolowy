@@ -1,8 +1,14 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
+    <body class="text-center">
+    <a class="mb-4" href="http://ifotos.pl/z/qwnwswh/"><img  src="http://s5.ifotos.pl/img/logopng_qwnwswh.png" alt="" width="200" height="200"></a>
+    <h1 class="h10 font-weight-normal">Registration Form</h1>
+    </body>
+
 {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
     {{ form_widget(form) }}
+
     <div>
-        <input type="submit" value="{{ 'registration.submit'|trans }}" />
+        <button class="btn btn-lg btn-warning btn-block" type="submit">Register</button>
     </div>
 {{ form_end(form) }}
