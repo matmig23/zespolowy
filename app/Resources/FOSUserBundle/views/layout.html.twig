@@ -21,9 +21,11 @@
                     {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
                 </a>
             {% else %}
-                <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+                <a href="{{ path('fos_user_security_login') }}">{{ ''|trans({}, 'FOSUserBundle') }}</a>
             {% endif %}
         </div>
+
+
 
         {% if app.request.hasPreviousSession %}
             {% for type, messages in app.session.flashbag.all() %}
@@ -34,6 +36,11 @@
                 {% endfor %}
             {% endfor %}
         {% endif %}
+
+        <body class="text-center">
+        <a class="mb-4" href="http://ifotos.pl/z/qwnwswh/"><img  src="http://s5.ifotos.pl/img/logopng_qwnwswh.png" alt="" width="200" height="200"></a>
+        <h1 class="h10 font-weight-normal">Please sign in</h1>
+        </body>
 
         <div>
             {% block fos_user_content %}

@@ -2,7 +2,7 @@
 
 {% block body %}
 
-    <a class="btn btn-primary" href="/todo/index">Back to list</a>
+    <a class="btn btn-primary" href="{{ path('admin_list') }}">Back to list</a>
     <hr>
     <h2 class="page-header">{{ todo.name }}</h2>
     <ul class="list-group">

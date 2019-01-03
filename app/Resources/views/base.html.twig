@@ -36,40 +36,40 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="/">Strona Główna <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">Homepage<span class="sr-only">(current)</span></a>
             </li>
 
             {% if is_granted('ROLE_ADMIN') %}
             <li class="nav-item">
-                <a class="nav-link" href="/Timetable/index">Kalendarz</a>
+                <a class="nav-link" href="/Timetable/index">Timetable</a>
             </li>
             {% endif %}
 
             {% if is_granted('ROLE_ADMIN') %}
             <li class="nav-item">
-                <a class="nav-link" href="{{ path('admin_list') }}">Lista Zadań</a>
+                <a class="nav-link" href="{{ path('admin_list') }}">Task List</a>
             </li>
             {% endif %}
 
             <li class="nav-item">
-                <a class="nav-link" href="/todo/create">Dodaj Zadanie</a>
+                <a class="nav-link" href="/todo/create">Add Task</a>
             </li>
 
             {% if is_granted('ROLE_ADMIN') %}
             <li class="nav-item">
-                <a class="nav-link" href="/Statistics/index">Statystyki</a>
+                <a class="nav-link" href="/Statistics/index">Statistics</a>
             </li>
             {% endif %}
 
             {% if is_granted('ROLE_ADMIN') %}
             <li class="nav-item">
-                <a class="nav-link" href="/Inventory/index">Inwentaryzacja</a>
+                <a class="nav-link" href="/Inventory/index">Inventory</a>
             </li>
             {% endif %}
 
 
             <li class="nav-item">
-                <a class="nav-link" href="/Contact/index">Kontakt</a>
+                <a class="nav-link" href="/Contact/index">Contact</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">

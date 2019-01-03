@@ -139,7 +139,7 @@ class TodoController extends Controller
                 'Task Updated'
             );
 
-            return $this->redirectToRoute('todo_list');
+            return $this->redirectToRoute('admin_list');
         }
         return $this->render('todo/edit.html.twig', array(
             'todo' => $todo,
@@ -178,7 +178,7 @@ class TodoController extends Controller
             'Task Removed'
         );
 
-        return $this->redirectToRoute('todo_list');
+        return $this->redirectToRoute('admin_list');
 
     }
 }
