@@ -1,6 +1,16 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h2 class="page-header">Details Device</h2>
 
+    <a class="btn btn-primary" href="{{ path('inventory_list') }}">Back to list</a>
+    <hr>
+    <h2 class="page-header">{{ Inventory.name }}</h2>
+    <ul class="list-group">
+        <li class="list-group-item">Category: {{ Inventory.category }}</li>
+        <li class="list-group-item">Owner: {{ Inventory.owner }}</li>
+
+    </ul>
+    <p>
+        {{ Inventory.description }}
+    </p>
 {% endblock %}

@@ -156,11 +156,11 @@ class TodoController extends Controller
             ->getRepository('AppBundle:Todo')
             ->find($id);
 
-        return $this->render('todo/details.html.twig', array(
+        return $this->render('Inventory:details.html.twig', array(
             'todo' =>$todo
         ));
 
-        return $this->render('todo/details.html.twig');
+        return $this->render('Inventory/details.html.twig');
     }
     /**
      * @Route("/todo/delete/{id}", name="todo_delete")

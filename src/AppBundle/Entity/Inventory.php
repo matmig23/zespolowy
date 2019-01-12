@@ -6,7 +6,7 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Todo
+ * Inventory
  *
  * @ORM\Table(name="inventory")
  * @ORM\Entity

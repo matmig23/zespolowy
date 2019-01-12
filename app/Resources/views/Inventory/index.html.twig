@@ -12,17 +12,18 @@
         </thead>
         <tbody>
 
+        {% for inventory in inventory %}
             <tr>
-                <th scope="row">ID</th>
-                <td>NAME</td>
-                <td>OWNER</td>
+                <th scope="row">{{ inventory.id }}</th>
+                <td>{{ inventory.name }}</td>
+                <td>{{ inventory.owner }}</td>
                 <td>
-                    <a href="{{ path('inventory_details') }}" class="tn btn-success">Details</a>
-                    <a href="{{ path('inventory_edit') }}" class="tn btn-default">Edit</a>
-                    <a href="{{ path('inventory_delete') }}" class="tn btn-danger">Delete</a>
+                    <a href="/Inventory/details/{{ inventory.id }}" class="tn btn-success">Details</a>
+                    <a href="/Inventory/edit/{{ inventory.id }}" class="tn btn-default">Edit</a>
+                    <a href="/Inventory/delete/{{ inventory.id }}" class="tn btn-danger">Delete</a>
                 </td>
             </tr>
-
+        {% endfor %}
 
         </tbody>
     </table>
