@@ -6,9 +6,15 @@
 
         <div class="jumbotron">
             <div class="container">
-                <h1 class="display-3">Hello, world!</h1>
-                <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+                <h1 class="display-4">Welcome to the helpdesk management </h1>
+                <p>This is an application for managing your team, tasks and devices in the company.
+                    The user adds tasks and contacts the admin, who performs tasks that are on the list, manages company devices and plans his work.
+                    The application is designed to simplify user-admin communication and automate work in the company.
+                </p>
+                {% if is_granted('ROLE_ADMIN') %}
+               <p><a class="btn btn-primary btn-lg" href="/Timetable/index" role="button">Go to Timetable &raquo;</a></p>
+                {% endif %}
+
             </div>
         </div>
 
@@ -16,19 +22,26 @@
             <!-- Example row of columns -->
             <div class="row">
                 <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    <h2>Tasks</h2>
+                    <p>
+                        If you know what to do, use the "Add Task" option. Set the task execution priority, if you choose high priority, admin will deal with it immediately.</p>
+                    <p><a class="btn btn-secondary" href="/todo/create" role="button">Add Task &raquo;</a></p>
                 </div>
+
                 <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    <h2>Devices</h2>
+                    <p>The application allows administrators to carry out the inventarisation of devices located in the company. If you want to find out which device you have, contact the administrators! </p>
+                    {% if is_granted('ROLE_ADMIN') %}
+                    <p><a class="btn btn-secondary" href="/Inventory/index" role="button">View devices list &raquo;</a></p>
+                    {% endif %}
                 </div>
+
+
                 <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    <h2>Contact</h2>
+                    <p>
+                        You have a problem? Contact us via the contact form. Give data and describe your problem or question. We will try to resign as soon as possible! </p>
+                    <p><a class="btn btn-secondary" href="/Contact/index" role="button"> Contact form &raquo;</a></p>
                 </div>
             </div>
 
