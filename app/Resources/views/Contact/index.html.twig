@@ -1,5 +1,18 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    INDEX Contact BODY
+<div class="container">
+    <h2 align="center"><a>Sent Message to us !</a></h2>
+    {{ form(our_form)}}
+</div>
+
+{% endblock %}
+
+{% block stylesheets %}
+<style>
+    .container{
+        margin-top: 40px;
+    }
+
+</style>
 {% endblock %}

@@ -10,6 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="todo")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\TodoRepository")
  */
+
 class Todo
 {
     /**
@@ -218,4 +219,3 @@ class Todo
         return $this->createDate;
     }
 }
-
